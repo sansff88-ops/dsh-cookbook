@@ -1600,7 +1600,7 @@ window.__ModuleLoader__.load({
 
     // -------------------------------------------------------------------- apply
     return {
-      name: 'recipe-box/client',
+      name: 'dsh-cookbook/client',
       inject: ['slots'],
       apply(ctx) {
         // ---- style (registered as an effect so the panel leaves no residue)

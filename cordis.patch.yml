@@ -1,0 +1,7 @@
+# dsh-cookbook bundle patch: inserts one row into the web profile roster.
+# Host half (exports ".") serves the dataset route, the image proxy and the
+# recipe_* agent tools; the `dsh.client` declaration makes the browser half
+# (exports "./client") load in the Web GUI as a sidebar panel.
+- insert:
+    - id: recipe-box
+      name: 'dsh-cookbook'

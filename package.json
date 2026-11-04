@@ -1,0 +1,53 @@
+{
+  "name": "dsh-cookbook",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "菜谱盒子：373 道家常菜谱（数据取自开源项目 HowToCook，Unlicense；以中式家常为主，兼收西式与日韩菜式），提供浏览、搜索、按食材反查、收藏与「做过」标记，并在聊天里暴露 recipe_* 工具。",
+  "license": "MIT",
+  "author": "YOUR-GITHUB-NAME",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR-GITHUB-NAME/dsh-cookbook.git"
+  },
+  "homepage": "https://github.com/YOUR-GITHUB-NAME/dsh-cookbook",
+  "bugs": {
+    "url": "https://github.com/YOUR-GITHUB-NAME/dsh-cookbook/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "recipe",
+    "cookbook",
+    "home-cooking"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "data/recipes.json",
+    "data/images",
+    "data/images-hd",
+    "NOTICE.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "slots"
+      ]
+    }
+  }
+}

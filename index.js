@@ -206,7 +206,7 @@ function canonical(value) {
       const attempt = async (upstream) => {
         const response = await fetch(upstream, {
           signal: AbortSignal.timeout(6000),
-          headers: { 'user-agent': 'dsh-recipe-box/1.0' },
+          headers: { 'user-agent': 'dsh-cookbook/1.0.1' },
         })
         if (!response.ok) throw new Error(`upstream ${response.status}`)
         const body = Buffer.from(await response.arrayBuffer())

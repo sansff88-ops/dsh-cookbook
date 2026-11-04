@@ -1729,7 +1729,7 @@ window.__ModuleLoader__.load({
         )
         ctx.slots.inject('sidebar.panellist', () =>
           ctx.slots.register(
-            { name: 'sidebar.panellist', id: PANEL_KEY, order: 30, label: '菜谱' },
+            { name: 'sidebar.panellist', id: PANEL_KEY, order: 30, label: '菜谱盒子' },
             function RecipeBoxIcon({ size, active }) {
               return h(
                 'span',

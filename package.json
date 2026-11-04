@@ -1,6 +1,6 @@
 {
   "name": "dsh-cookbook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "菜谱盒子：373 道家常菜谱（数据取自开源项目 HowToCook，Unlicense；以中式家常为主，兼收西式与日韩菜式），提供浏览、搜索、按食材反查、收藏与「做过」标记，并在聊天里暴露 recipe_* 工具。",
   "license": "MIT",

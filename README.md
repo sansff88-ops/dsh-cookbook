@@ -39,7 +39,7 @@
 ```bash
 dsh plugin --profile web add dsh-cookbook
 # 或直接从 GitHub
-dsh plugin --profile web add github:YOUR-GITHUB-NAME/dsh-cookbook
+dsh plugin --profile web add github:sansff88-ops/dsh-cookbook
 ```
 
 装完重启 `dsh web`，侧栏会出现「菜谱盒子」入口。
@@ -47,7 +47,7 @@ dsh plugin --profile web add github:YOUR-GITHUB-NAME/dsh-cookbook
 ## 开发
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-NAME/dsh-cookbook
+git clone https://github.com/sansff88-ops/dsh-cookbook
 cd dsh-cookbook
 dsh plugin --profile web add link:$(pwd)
 ```

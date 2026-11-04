@@ -45,6 +45,16 @@ dsh plugin --profile web add github:sansff88-ops/dsh-cookbook
 
 装完重启 `dsh web`，侧栏会出现「菜谱盒子」入口。
 
+### 兼容性
+
+| 项 | 要求 |
+|---|---|
+| DeepSeek Harness | `^0.2.1-rc.3`（即 0.2.x；声明在 `package.json` 的 `engines.dsh`，不满足时 Harness 会拒绝安装/激活） |
+| Node.js | `>=22` |
+| 实测环境 | DSH `0.2.1-rc.5` + Node 24，Web GUI 页面与 `recipe_*` 工具均可用 |
+
+插件用的是公开的宿主契约（`ctx.webServer` 前缀路由、`ctx.tools.register`、客户端 `slots` 注册），没有 import 任何 Harness 内部包；DSH 若升到 0.3，需重新验证一遍再放宽 `engines.dsh`。
+
 ## 开发
 
 ```bash

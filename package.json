@@ -21,6 +21,10 @@
     "cookbook",
     "home-cooking"
   ],
+  "engines": {
+    "node": ">=22",
+    "dsh": "^0.2.1-rc.3"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
